@@ -28,6 +28,7 @@ public class ChapterController {
 
     @RequestMapping("selectAll")
     public Map<String,Object> selectAll(Integer page,Integer rows,String albumId){
+
         return chapterService.selectChapterByAlbumId(page,rows,albumId);
 
     }
@@ -37,7 +38,8 @@ public class ChapterController {
         Map<String, Object> map = new HashMap<>();
         try {
             if("add".equals(oper)){
-                //            tianjia
+                //tianjia
+                //今天是个好日子
                 String id = chapterService.add(chapter);
                 map.put("status",true);
                 map.put("message",id);

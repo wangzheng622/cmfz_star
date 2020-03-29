@@ -14,5 +14,4 @@ public interface StarService {
     void edit(Star star);
 
     List<Star> getAllStarForSelect();
-
 }

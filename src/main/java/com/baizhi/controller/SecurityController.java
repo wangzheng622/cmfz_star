@@ -27,6 +27,4 @@ public class SecurityController {
         response.setContentType("image/png");
         ImageIO.write(image,"png",response.getOutputStream());
     }
-
-
 }
